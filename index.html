@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="./assects/css/style.css">
+    <link rel="stylesheet" href="./assects/css/responsive.css">
+</head>
+<body>
+    <section>
+        <div class="circle" ></div>
+        <header>
+            <a href="" ><img src="./assects/img/starbucks-logo.jpg" alt="" class="logo"></a>
+            <div class="toggle" onclick="toggleMenu();"></div>
+            <ul class="navtigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>It's not just Coffee <br>
+                It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde eum aliquid totam voluptate aut natus qui corrupti nesciunt impedit nobis maxime, eos inventore, veritatis repellat ipsum libero et? Rem, voluptatum!</p>
+                <a href="#">learn more</a>
+            </div>    
+            <div class="imgbox">
+                <img src="./assects/img/img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">.
+            <li><img src="./assects/img/thumb1.png" onclick="imgSlider('./assects/img/img1.png'); changeCircleColor('#017143')" ></li>
+            <li><img src="./assects/img/thumb2.png" onclick="imgSlider('./assects/img/img2.png'); changeCircleColor('#eb7495')" ></li>
+            <li><img src="./assects/img/thumb3.png" onclick="imgSlider('./assects/img/img3.png'); changeCircleColor('#d752b1')" ></li>
+        </ul>
+        <ul class="sci">
+            <li><a href=""><img src="./assects/img/facebook.png" alt=""></a></li>
+            <li><a href=""><img src="./assects/img/instagram.png" alt=""></a></li>
+            <li><a href=""><img src="./assects/img/twitter.png" alt=""></a></li>
+        </ul>
+    </section>
+    <script>
+
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+
+
+        }
+        
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background= color;
+
+        }
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var navtigation = document.querySelector('.navtigation')
+            menuToggle.classList.toggle('active')
+            navtigation.classList.toggle('active')
+        }
+
+    </script>
+</body>
+</html>

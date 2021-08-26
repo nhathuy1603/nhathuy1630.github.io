@@ -1,0 +1,88 @@
+@media ( max-width: 1000px) {
+    header{
+        padding:20px 20px 120px;
+    }
+    header .logo {
+        max-width: 60px;
+    }
+    header ul{
+        display: none;
+    }
+    section{
+        padding: 20px;
+    }
+    .toggle{
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor:pointer ;   
+        background: url(/assects/img/menu.png);
+        background-size: 30px;
+        background-position:center;
+        background-repeat: no-repeat;
+        filter:invert(1) ;
+    }
+    .active {
+        position: fixed;
+        right: 20px;
+        background: url(/assects/img/close.png);
+        background-size: 25px;
+        background-position:center;
+        background-repeat: no-repeat;
+        z-index: 11;
+    }
+    .navtigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #fff;
+        z-index: 10;
+    }
+    .navtigation.active a {
+        margin-bottom: 30px;
+        font-size: 1.5em;
+        font-weight: 500;
+    }
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textbox h2{
+        
+        font-size: 2.53em;
+        margin-bottom: 15px;
+    }
+    .content .textbox {
+        max-width: 100%;
+    }
+    .content .imgbox img {
+        max-width: 310px;
+    }
+    .thumb li img {
+        padding-top: 100px;
+        max-width: 40px;
+    }
+    .circle {
+       
+        clip-path: circle(400px at center bottom );
+    }
+
+    .content .imgbox {
+        margin-top: 0;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .sci{
+        background: #017143;
+        border-radius: 4px;
+        right: 0;
+    }
+    
+}
